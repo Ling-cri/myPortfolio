@@ -1,0 +1,151 @@
+*{
+    margin:0 auto;
+    padding: 0;
+}
+    
+body{
+    font-family:"Afacad";
+    
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 20px;
+    width:800px;
+  }
+
+.circleContainer{
+    font-family: "MuseoModerno";
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.circle{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    
+}
+
+.circle:hover{
+    transform:scale(1.5);
+}
+    
+.circleOne{
+    background-color: #ED008C;
+}
+.circleTwo{
+    background-color: #01AEF0;
+}
+.circleThree{
+    background-color: #FEF200;
+}
+
+/*This part is the content*/
+
+section{
+    width: 1050px;
+}
+
+.content{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    padding-top:50px;
+    gap:60px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+h1{
+    color:#ED008C;
+    font-size: 128px;
+    text-align: right;
+}
+
+.circle-text-container {
+    position:relative; 
+    margin:50px auto;
+    display: flex;
+    align-items: center;
+    font-family: "MuseoModerno";
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none; 
+}
+
+.circleFour {
+    width: 80px; 
+    height: 80px;
+    background-color: #FEF200;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    left:350px;
+    transition: background-color 1s ; 
+}
+
+
+.circleFour:hover {
+    animation: colorChange 2s steps(1) infinite;
+}
+
+@keyframes colorChange{
+    0%{
+        background-color: #ED008C;
+    }
+    33.33%{
+        background-color: #01AEF0;
+    }
+    66.66%{
+        background-color: #FEF200;
+    }
+    100%{
+        background-color: #ED008C;
+    }
+}
+
+.circle-text-container .text {
+    font-weight: normal;
+}
+
+footer{
+    background-color:Black;
+    color:white;
+    padding: 30px 0 10px 0;
+    text-align: center;
+    width:100%;
+}
+
+footer a{
+    padding:20px;
+    text-decoration:none;
+}
+
+footer p{
+    padding-top:20px;
+    font-size: 12px;
+}
